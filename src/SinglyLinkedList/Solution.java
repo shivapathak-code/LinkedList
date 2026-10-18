@@ -38,6 +38,7 @@ public Solution()
         }
         size++;
     }
+
     public void insertAtTail(int data)
     {
         Node newNode = new Node(data);
@@ -54,6 +55,7 @@ public Solution()
         }
         size++;
     }
+
     public void insertAtPosition(int position , int data)
     {
         // invalid position ;
@@ -87,6 +89,7 @@ public Solution()
 
         size++;
     }
+
     public void printList()
     {
         Node temp = head;
@@ -98,14 +101,17 @@ public Solution()
         }
         System.out.println();
     }
+
     public int getSize()
     {
         return size;
     }
+
     public boolean isEmpty()
     {
         return head == null;
     }
+
     public int gethead()
     {
         if(head == null)
@@ -117,6 +123,7 @@ public Solution()
             return head.data;
         }
     }
+
     public int gettail()
     {
         if(tail == null)
@@ -128,6 +135,7 @@ public Solution()
             return tail.data;
         }
     }
+
     public boolean serach( int target) {
         Node temp = head;
         while (temp != null)
@@ -146,6 +154,7 @@ public Solution()
         // ans nhi mila to isi ko false kerna padega ;
         return false;
     }
+
     public int findPosition(int data)
     {
         Node temp = head;
@@ -165,6 +174,7 @@ public Solution()
         return -1;
     }
 
+
     public void updateAtPosition(int pos  , int newData)
     {
         if(pos < 1 || pos > size+1)
@@ -179,6 +189,7 @@ public Solution()
         }
         temp.data = newData;
     }
+
     public boolean updateValue(int oldValue , int newValue){
     Node temp = head;
 
@@ -193,6 +204,7 @@ public Solution()
     }
     return  false;
     }
+
     public void deleteHead()
     {
         if(head == null)
@@ -207,6 +219,7 @@ public Solution()
         }
         size--;
     }
+
     public void deleteTail()
     {
         if(head == null)
@@ -234,6 +247,7 @@ public Solution()
 
         size--;
     }
+
     public void deleteAtPosition(int pos)
     {
         if(pos < 1 || pos > size+1)
@@ -264,6 +278,7 @@ public Solution()
 
         size--;
     }
+
     public boolean deleteAtValue(int target)
     {
         if(head == null)
@@ -301,6 +316,7 @@ public Solution()
         }
         return false;
     }
+
 
     public static void main(String[] args)
     {
